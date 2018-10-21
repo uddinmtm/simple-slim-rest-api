@@ -4,7 +4,7 @@ Sebuah Rest API sederhana yang dibangun dari Slim 3.
 
 ## Installation
 
-Sebelumnya, untuk mencoba menginstall ini, buatlah terlebih dahulu sebuah database dan di dalamnya terdapat tabel `news`.
+1 . Buat terlebih dahulu sebuah database dan di dalamnya terdapat tabel `news`.
 
 ```
 CREATE TABLE `news` (
@@ -18,3 +18,9 @@ CREATE TABLE `news` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 ```
+
+2. Atur koneksi database di file .env.example kemudian save as menjadi .env .
+
+3. Jalankan perintah `composer install` di cmd / terminal. Perintah ini untuk mendapatkan library2 yang dibutuhkan, sesuai yang tercantum di file composer.json .
+
+4. Setelah itu coba testing dengan menjalankan `composer start` di cmd / teminal.
