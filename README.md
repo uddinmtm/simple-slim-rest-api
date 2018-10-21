@@ -19,8 +19,8 @@ CREATE TABLE `news` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 ```
 
-2. Atur koneksi database di file .env.example kemudian save as menjadi .env .
+2. Atur koneksi database di file _.env.example_ kemudian save as menjadi _.env_ .
 
-3. Jalankan perintah `composer install` di cmd / terminal. Perintah ini untuk mendapatkan library2 yang dibutuhkan, sesuai yang tercantum di file composer.json .
+3. Jalankan perintah `composer install` di cmd / terminal. Perintah ini untuk mendapatkan library2 yang dibutuhkan, sesuai yang tercantum di file _composer.json_ .
 
-4. Setelah itu coba testing dengan menjalankan `composer start` di cmd / teminal.
+4. Setelah itu coba testing dengan menjalankan `composer start` di cmd / terminal.
