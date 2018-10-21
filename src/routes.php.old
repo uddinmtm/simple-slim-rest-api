@@ -2,26 +2,11 @@
 
 use Slim\Http\Request;
 use Slim\Http\Response;
-use App\Controllers\NewsController;
 
 // Routes
 
-// $app->get('/[{name}]', function (Request $request, Response $response, array $args) {
-//     // Sample log message
-//     $this->logger->info("Slim-Skeleton '/' route");
-
-//     // Render index view
-//     return $this->renderer->render($response, 'index.phtml', $args);
-// });
-
-$app->get('/test', NewsController::class . ':test');
-
 $app->get('/news', function (Request $request, Response $response) {
     $this->logger->info("Slim-Skeleton GET '/news' route");
-
-    $news = new NewsController();
-    var_dump($news->test());
-    die();
 
     // get data news
     $pdo = $this->db;
@@ -29,10 +14,6 @@ $app->get('/news', function (Request $request, Response $response) {
     $sth = $pdo->query($sql);
     
     $records = $sth->fetchAll();
-
-    if (empty($records)) {
-        return $response->withStatus(404);
-    }
 
     // reformat data for good response
     $baseUrl = ($request->getUri())->getBaseUrl();
