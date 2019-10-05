@@ -1,5 +1,5 @@
-/vendor/
+/vendor
 /logs/*
 !/logs/README.md
-.env
 /public/php_errors.log
+/src/settings.php
