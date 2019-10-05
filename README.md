@@ -19,7 +19,7 @@ CREATE TABLE `news` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 ```
 
-2. Atur koneksi database di file _.env.example_ kemudian save as menjadi _.env_ .
+2. Atur koneksi database di file _settings.php.example_ kemudian save as menjadi _settings.php_.
 
 3. Jalankan perintah `composer install` di cmd / terminal. Perintah ini untuk mendapatkan library2 yang dibutuhkan, sesuai yang tercantum di file _composer.json_ .
 
